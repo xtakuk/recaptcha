@@ -16,7 +16,9 @@ grecaptcha.ready(function() {
     });
 });
 </script>
-<input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
-<button type="submit"> 送信 </button>
+<button class="g-recaptcha" 
+        data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
 </body>
 </html>
